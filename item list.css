@@ -1,0 +1,64 @@
+/* Reset some default margin and padding */
+body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Apply styles to the header */
+#main-header {
+    background-color: #a72828; /* Green background color */
+    color: white; /* White text color */
+    padding: 1rem; /* 16px padding on all sides */
+    margin-bottom: 1rem; /* 16px margin at the bottom */
+}
+
+/* Center the header title */
+#header-tittle {
+    text-align: center;
+}
+
+/* Apply styles to the main content */
+#main {
+    background-color: #fff; /* White background color */
+    padding: 1rem; /* 16px padding on all sides */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+/* Style the form and input elements */
+.form-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    margin-right: 0.5rem;
+}
+
+.btn-dark {
+    background-color: #0f4a86; /* Dark background color */
+    color: #fff; /* White text color */
+}
+
+/* Style the list of items */
+#items {
+    list-style: none; /* Remove default list styles */
+}
+
+#list-group-Item {
+    border: 1px solid #ddd; /* Add a border to each list item */
+    padding: 0.5rem; /* Add padding to each list item */
+    margin-bottom: 0.5rem; /* Add margin to the bottom of each list item */
+}
+
+/* Style the "learn" div */
+.learn {
+    height: 100px;
+    background-color: #f8f9fa; /* Light gray background color */
+    margin-top: 1rem; /* Add margin to the top */
+}
