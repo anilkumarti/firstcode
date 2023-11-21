@@ -17,8 +17,8 @@ list[0].cssText="font-weight:bold;"
 var element=document.getElementById('list-group-Item3');
 element.style.background="green";
 var item=document.getElementById("items")
- var listItem=item.getElementsByTagName('li');
- for(var i=0;i<listItem.length;i++)
- { listItem[i].style.cssText='font-weight:bold';
+ var li=item.getElementsByTagName('li');
+ for(var i=0;i<li.length;i++)
+ { li[i].style.cssText='font-weight:bold; color: blue';
 
  }
