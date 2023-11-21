@@ -22,3 +22,8 @@ var item=document.getElementById("items")
  { li[i].style.cssText='font-weight:bold; color: blue';
 
  }
+
+ var item3=document.getElementById("list-group-Item3");
+  item3.style.display='none';
+  var item3=document.getElementById("list-group-Item2");
+  item3.style.background='green';
