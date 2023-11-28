@@ -33,7 +33,9 @@ var nextElementSibling = next.nextElementSibling;
     nextElementSibling.style.color = "#09791B";
     var nextSibling=next.nextSibling;
      nextSibling.textContent="This is content of nextSibling";
-   
+   var FormID=document.querySelector('#formID');
+   console.log(FormID.parentElement.parentElement.parentElement)
+    FormID.parentElement.parentElement.parentElement.style.background="black";
   var prev=document.querySelector('#mainOL');
    var prevElementSibling=prev.previousElementSibling;
     prevElementSibling.style.background="pink";
@@ -64,9 +66,28 @@ var head=document.querySelector('header');
    //    create.append(textNode);
       // var parentElement=document.getElementById('.learn');
       //  parentElement.appendChild(create);
-    
+    var button=document.getElementById('button').addEventListener('click',onButton);
+    function onButton() {
+      
+      var head=document.getElementById('header-tittle');
+       head.innerText="This is the text after clicking the button";
+      
+
+    }
+ var itemInput=document.querySelector('input[type="submit"]');
+
+ itemInput.addEventListener('click',runevent);
+    function runevent(event)
+    { event.preventDefault()
+      var form=document.querySelector('#form1');
+      document.getElementById('output').style.background="blue";
+ document.getElementById('output').innerHTML='<h3> '+ form.value +'</h3>';
+    }
+
  var firstchild=document.querySelector('.list-group-item:first-child');
   firstchild.style.color="grey";
+
+
  
  var item=document.querySelector('.list-group-item:last-child')
  item.style.color="yellow";
